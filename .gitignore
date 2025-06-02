@@ -1,5 +1,7 @@
 decomposition
 test
 skipped
-
+*~
+*.swp
+*.swo
 
