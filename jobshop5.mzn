@@ -45,7 +45,7 @@ constraint
         job_task_start[j, n_tasks_per_job] + job_task_duration[j, n_tasks_per_job] <= t_end
     );
 
-solve 
+solve :: int_search(job_task_start, smallest, indomain_min)
   minimize t_end;
 
 output [

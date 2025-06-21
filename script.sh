@@ -33,7 +33,7 @@ for DZN_FILE in "$INSTANCE_DIR"/*.dzn; do
 
     echo "Running $DZN_FILE..."
 
-    minizinc -a -s --output-time -t "$MZN_TIMEOUT" -o "$OUTPUT_FILE" --solver Pumpkin "$MODEL_FILE" "$DZN_FILE" 
+    minizinc -a -s -f --output-time -t "$MZN_TIMEOUT" -o "$OUTPUT_FILE" --solver Pumpkin "$MODEL_FILE" "$DZN_FILE" 
 
     echo "Finished $DZN_FILE"
 done
